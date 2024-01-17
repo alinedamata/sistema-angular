@@ -1,0 +1,15 @@
+<div id="game" class="game">
+
+  <div class="cabecalho">
+    <app-category (categoryChange)="onCategoryChange($event)"></app-category>
+    <app-image [folder]="folder" [image]="image" (imageChange)="onImageChange($event)"></app-image>
+  </div>
+
+
+  <app-board-game *ngIf="folder" [folder]="folder" [image]="image" (statsChange)="onStatsChange($event)"></app-board-game>
+
+  <div *ngIf="over" class="info">
+    <span >Jogo Finalizado</span>
+  </div>
+
+</div>

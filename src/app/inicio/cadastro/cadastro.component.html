@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="image">
+      <img src="../assets/cadastro.svg" alt="" srcset="">
+    </div>
+      <div class="main">
+        <div class="signup">
+          <form>
+            <!-- <label for="chk" >Cadastre-se</label> -->
+            <label>Digite o seu nome</label>
+            <input [(ngModel)]="usuario.nome" type="text" name="txt" placeholder="Nome" required #nome="ngModel">
+
+            <label>Digite o seu email</label>
+            <input [(ngModel)]="usuario.email" type="email" name="email" placeholder="Email">
+            <label>Digite a sua senha</label>
+            <div  class=" inputSenha" >
+              <input [(ngModel)]="usuario.senha" name="senha" [type]="hide ? 'password' : 'text'" placeholder="123456">
+              <i mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </i>
+            </div>
+            <button type="button" (click)="cadastrarUsuario() ">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  

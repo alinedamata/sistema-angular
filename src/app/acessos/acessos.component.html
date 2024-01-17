@@ -1,0 +1,14 @@
+ <div  class="container">
+    <div class="main">
+      <div *ngFor="let bloco of items; let posicaoItem = index; " (click)="!!bloco.acao && bloco.acao()" class="acessos">
+        
+        <div class="image">
+        <img [src]="bloco.img"/>
+        </div>
+        <div class="descricao" >  
+        <h2>{{ bloco.titulo }}</h2>
+        <h3> {{ bloco.descricao }}</h3>
+        </div>
+      </div>
+    </div>  
+  </div>

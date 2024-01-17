@@ -1,0 +1,52 @@
+
+<div  class="cont">
+
+<div class="main">
+  <h2>Minhas Tarefas</h2>
+    <!-- Essa mensagem será exibida se não houver nenhuma tarefa inserida. -->
+    <p class="text-center" *ngIf="listaTarefas.length==0">
+      <small>
+        Você não tem nenhuma tarefa hoje!
+      </small>
+    </p>
+  
+<!-------------------------------------------------------------------------->
+
+<!-- 
+<mat-form-field appearance="fill">
+  <mat-label>Nome da tarefa</mat-label>
+  <input matInput placeholder="Nome da tarefa" [formControl]="nomeTarefa">
+</mat-form-field> -->
+
+<div class="tarefa" *ngFor="let tarefa of listaTarefas">
+ <div class="tarefasCampo">
+  <p>{{ tarefa.nome }}</p>
+</div>
+<div class="tarefaBotao">
+    <button (click)="deletarTarefa(tarefa.id)">
+     <mat-icon><span class="material-symbols-outlined">delete</span></mat-icon>
+    </button>
+</div>
+    <div class="tarefaBotao">
+  <button (click)="concluirTarefa(tarefa)">
+    <mat-icon><span class="material-symbols-outlined">
+    check_circle
+    </span></mat-icon></button>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+<footer>
+  <div class="botaoAdd">
+      <button (click)="adicionar()" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+        <mat-icon><span class="material-symbols-outlined">
+          add
+          </span></mat-icon>
+      </button>
+  </div>
+</footer>
+<!-------------------------------------------------------------------------->
+

@@ -1,0 +1,10 @@
+<div class="card" [ngClass]="{rotated: isRotated}" (click)="onClick()">
+    <div class="card-inner" >
+        <div class="front">
+          <img [src]="photo" alt="Photo">
+        </div>
+        <div class="back">
+          <mat-icon>question_mark</mat-icon>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+
+.control-panel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+.board {
+  display: flex;
+  width: 360px;
+  height: calc(100% - 50px);
+  align-items: center;
+  margin-left: auto;
+  justify-content: center;
+  margin-right: auto;
+
+  &__content{
+      display: flex;
+  flex-wrap: wrap;
+  }
+}
+
+mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+
+select {
+height: 40px;
+margin-right: 80px;
+text-align: center;
+font-size: 1.2em;
+font-weight: bold;
+color: #17839A;
+border: none;
+border-radius: 10px;
+}
+mat-icon {
+  color: #ffffff;
+}

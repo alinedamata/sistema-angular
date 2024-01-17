@@ -1,0 +1,29 @@
+<div class="control-panel">
+    <select matNativeControl required [(ngModel)]="cardCount" aria-label="Select an option" class="card-count">
+      <option value="6">6 PARES</option>
+      <option value="8">8 PARES</option>
+    </select>
+
+    <!-- <mat-radio-group [(ngModel)]="cardCount" aria-label="Select an option" class="card-count">
+        <mat-radio-button [value]="6">6x2</mat-radio-button>
+        <mat-radio-button [value]="8">8x2</mat-radio-button>
+    </mat-radio-group> -->
+
+  <!-- <button  class="btn-new-game"  mat-button color="primary" (click)="newGame()">
+    <mat-icon> <span class="material-symbols-outlined">
+    refresh
+    </span> </mat-icon></button> -->
+
+
+ <button mat-mini-fab color="write" aria-label="Example icon button with a menu icon" (click)="newGame()">
+     <mat-icon> <span class="material-symbols-outlined">refresh</span> </mat-icon>
+ </button>
+</div>
+ 
+<mat-divider></mat-divider>
+
+<div class="board" [style.width.px]="boardWidth">
+  <div class="board__content">
+    <memory-card *ngFor="let card of cards;let i=index" [id]="i" [photo]="card.photo"></memory-card>
+  </div>
+</div>

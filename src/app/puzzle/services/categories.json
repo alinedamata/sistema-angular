@@ -1,0 +1,12 @@
+[
+  {
+    "folder": "animals",
+    "id": 1,
+    "name": "Animais"
+  },
+  {
+    "folder": "frutas",
+    "id": 2,
+    "name": "Frutas"
+  }
+]

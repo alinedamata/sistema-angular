@@ -1,0 +1,30 @@
+.game {
+  width: 40%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.game span {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+
+  .game {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+.cabecalho{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1rem 0;
+}

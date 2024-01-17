@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #019AD6, #30D4FD, #019AD6);
+}
+
+/* sweetAlert2 */
+.teste-confirmButton {
+  background-color: #F18947;
+}
+
+.teste-actions {
+  display: flex;
+  gap: 2rem;
+}
+
+.teste-actions button {
+  width: 150px;
+  padding: 0.4rem 0.9rem;
+  border: none;
+  outline: none;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #FF8C42;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#preview-alert-teste {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+#preview-alert-teste img {
+  height: 250px;
+  width: 300px;
+  border-radius: 100%;
+}
+
+#preview-alert-teste p {
+  color: #17839A;
+  font-size: 1.7em;
+  display: flex;
+  justify-content: left;
+  margin: 15px;
+  font-weight: bold;
+  font-family: 'Jost', sans-serif;
+  text-align: justify;
+}

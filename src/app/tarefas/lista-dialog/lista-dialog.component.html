@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Nova tarefa</h1>
+<div mat-dialog-content>
+  <p>Descreva qual será sua nova tarefa</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Nome da tarefa</mat-label>
+    <input matInput placeholder="Nome da tarefa" [formControl]="nomeTarefa">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="adicionarTarefa()" >Salvar</button>
+  <button mat-button mat-dialog-close>Cancelar</button>
+</div>
